@@ -12,10 +12,12 @@ class HomePage extends ConsumerWidget {
     final notesAsync = ref.watch(notesStreamProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('My Notes')),
+      appBar: AppBar(title: const Text('Home Page')),
       body: notesAsync.when(
         data: (notes) => notes.isEmpty
-            ? const Center(child: Text('No notes yet.'))
+            ? const Center(child: Text('No notes yet.',
+            style: TextStyle(color: Colors.blue, fontSize: 18),
+            ))
             : ListView.builder(
                 padding: const EdgeInsets.all(16),
                 itemCount: notes.length,

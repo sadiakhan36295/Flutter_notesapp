@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Notes App',
       routerConfig: AppRoutes.router,
-      // Optional if you have a theme
+      theme: AppTheme.lightTheme,
     );
   }
 }

@@ -18,7 +18,7 @@ class RegisterPage extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Create Account', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            const Text('Create Account', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue)),
             const SizedBox(height: 24),
             TextField(controller: nameController, decoration: const InputDecoration(labelText: 'Name')),
             const SizedBox(height: 16),

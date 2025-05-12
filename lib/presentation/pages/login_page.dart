@@ -17,7 +17,7 @@ class LoginPage extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Welcome Back', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            const Text('Welcome Back', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue)),
             const SizedBox(height: 24),
             TextField(controller: emailController, decoration: const InputDecoration(labelText: 'Email')),
             const SizedBox(height: 16),

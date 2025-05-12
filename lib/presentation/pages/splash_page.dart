@@ -12,7 +12,10 @@ class SplashPage extends StatelessWidget {
 
     return Scaffold(
       body: Center(
-        child: Text('Notes App', style: Theme.of(context).textTheme.headlineLarge),
+        child: Text('Notes App', style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+          color: Colors.blue,
+           fontWeight: FontWeight.bold,
+        )),
       ),
     );
   }
